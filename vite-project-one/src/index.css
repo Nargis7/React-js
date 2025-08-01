@@ -11,4 +11,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(55, 55, 67);
+  color: white;
+  /* font-size: 5rem; */
 }

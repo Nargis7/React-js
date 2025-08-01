@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import UserCard from "./components/userCard";
+import './App.css';
+import './components/UserCard.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+import nargispic from './assets/nargispic.jpeg';
+import surajpic from './assets/surajpic.jpeg';
+import sanjeevpic from './assets/sanjeevpic.jpeg';
+import nikitapic from './assets/nikitapic.jpeg';
+import abhishekpic from './assets/abhishekpic.jpeg';
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+function App(){
+  return(
+    <div className="container">
+     <UserCard 
+      name="Nargis Perween"
+        img={nargispic}
+        desc="Hi, I'm Nargis — a passionate Computer Science student currently pursuing my B.Tech in 3rd year."
+      />
+     <UserCard 
+      name="Suraj Mandal"
+        img={surajpic}
+        desc="Hey, I'm Suraj — a full-stack developer who loves to build web apps and teach coding!"
+      />
+     
+     <UserCard  name="Sanjeev Rai"
+        img={sanjeevpic}
+        desc="Hey, I'm Sanjeev — a full-stack developer who loves to build web apps and teach coding!"
+      />
+      <UserCard  name="Nikita Kumari"
+        img={nikitapic}
+        desc="Hey, I'm Nikita — a full-stack developer who loves to build web apps and teach coding!"
+      />
+      <UserCard  name="Abhishek Yadav"
+        img={abhishekpic}
+        desc="Hey, I'm Abhishek — a full-stack developer who loves to build web apps and teach coding!"
+      />
+    </div>
   )
 }
 
-export default App
+export default App;
